@@ -2,21 +2,21 @@
 
 ## Screenshots
 <p align="center">
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/1.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/2.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/3.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/4.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/5.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/6.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/7.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/8.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/9.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/10.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/11.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/12.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/13.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/14.png" width="360px" />
-<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates-2/admin-dashboard/ss/15.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/1.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/2.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/3.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/4.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/5.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/6.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/7.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/8.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/9.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/10.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/11.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/12.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/13.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/14.png" width="360px" />
+<img alt="admin-dashboard" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/templates/admin-dashboard/ss/15.png" width="360px" />
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
