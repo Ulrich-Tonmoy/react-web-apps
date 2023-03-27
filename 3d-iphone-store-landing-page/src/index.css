@@ -170,6 +170,10 @@ nav .list-styled {
   list-style: none;
 }
 
+nav .list-styled > li {
+  cursor: pointer;
+}
+
 nav .link-styled {
   font-size: 12px;
   font-weight: 400;
