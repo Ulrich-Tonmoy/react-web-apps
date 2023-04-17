@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import { easing } from "maath";
 import { useSnapshot } from "valtio";
 import { useFrame } from "@react-three/fiber";
@@ -8,10 +8,10 @@ import state from "../store";
 
 const Shirt: FC = () => {
   const snap = useSnapshot(state);
-  const { nodes, materials } = useGLTF("/shirt_baked.glb");
+  const { nodes, materials } = useGLTF("/shirt_baked.glb") as any;
 
-  const logoTexture = useTexture(snap.logoDecal);
-  const fullTexture = useTexture(snap.fullDecal);
+  const logoTexture = useTexture(snap.logoDecal) as THREE.Texture;
+  const fullTexture = useTexture(snap.fullDecal) as THREE.Texture;
 
   useFrame((state, delta) => easing.dampC(materials.lambert1.color, snap.color, 0.25, delta));
 
