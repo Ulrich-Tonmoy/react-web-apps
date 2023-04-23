@@ -2,11 +2,11 @@
 
 ## [Live](https://3d-t-shirt-customizer.netlify.app/)
 
-## SS
+## Screenshots
 
 <p align="center">
-  <img alt="Home" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/3d-t-shirt-customizer/ss/1.png" width="360px"/>
-  <img alt="Customizer" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/3d-t-shirt-customizer/ss/2.png" width="360px"/>
+  <img alt="Home" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/3d-t-shirt-customizer/docs/1.png" width="360px"/>
+  <img alt="Customizer" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/3d-t-shirt-customizer/docs/2.png" width="360px"/>
 </p>
 
 ## Introduction
