@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
@@ -17,15 +19,15 @@ import { scrollAnimation } from "../lib/ScrollAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const WebgiViewer = forwardRef((props, ref) => {
-  const canvasRef = useRef();
-  const canvasContainerRef = useRef(null);
-  const [viewRef, setViewRef] = useState(null);
-  const [targetRef, setTargetRef] = useState(null);
-  const [cameraRef, setCameraRef] = useState(null);
-  const [positionRef, setPositionRef] = useState(null);
-  const [previewMode, setPreviewMode] = useState(false);
-  const [isMobile, setIsMobile] = useState(null);
+const WebgiViewer = forwardRef((props: any, ref: any) => {
+  const canvasRef = useRef<any>();
+  const canvasContainerRef = useRef<any>(null);
+  const [viewRef, setViewRef] = useState<any>(null);
+  const [targetRef, setTargetRef] = useState<any>(null);
+  const [cameraRef, setCameraRef] = useState<any>(null);
+  const [positionRef, setPositionRef] = useState<any>(null);
+  const [previewMode, setPreviewMode] = useState<any>(false);
+  const [isMobile, setIsMobile] = useState<any>(null);
 
   useImperativeHandle(ref, () => ({
     triggerPreview() {
@@ -52,14 +54,17 @@ const WebgiViewer = forwardRef((props, ref) => {
     },
   }));
 
-  const memoizedScrollAnimation = useCallback((position, target, isMobile, onUpdate) => {
-    if (position && target && onUpdate) {
-      scrollAnimation(position, target, isMobile, onUpdate);
-    }
-  }, []);
+  const memoizedScrollAnimation = useCallback(
+    (position: any, target: any, isMobile: any, onUpdate: any) => {
+      if (position && target && onUpdate) {
+        scrollAnimation(position, target, isMobile, onUpdate);
+      }
+    },
+    []
+  );
 
   const setupViewer = useCallback(async () => {
-    const viewer = new ViewerApp({
+    const viewer: any = new ViewerApp({
       canvas: canvasRef.current,
     });
 

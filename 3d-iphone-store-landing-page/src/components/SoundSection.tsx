@@ -1,8 +1,6 @@
-import React from "react";
-
 const SoundSection = () => {
   const handleLearnMore = () => {
-    const el = document.querySelector(".display-section");
+    const el = document.querySelector(".display-section") as HTMLElement;
     window.scrollTo({
       top: el.getBoundingClientRect().bottom,
       left: 0,

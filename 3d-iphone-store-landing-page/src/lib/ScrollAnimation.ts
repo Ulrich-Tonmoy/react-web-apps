@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import gsap from "gsap";
 
-export const scrollAnimation = (position, target, isMobile, onUpdate) => {
+export const scrollAnimation = (position: any, target: any, isMobile: any, onUpdate: any) => {
   const tl = gsap.timeline();
 
   tl.to(position, {

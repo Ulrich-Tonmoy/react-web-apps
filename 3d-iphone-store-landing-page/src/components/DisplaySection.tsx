@@ -1,6 +1,6 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-const DisplaySection = ({ triggerPreview }) => {
+const DisplaySection = ({ triggerPreview }: any) => {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };

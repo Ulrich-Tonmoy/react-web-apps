@@ -1,8 +1,6 @@
-import React from "react";
-
 const Jumbotron = () => {
   const handleLearnMore = () => {
-    const el = document.querySelector(".sound-section");
+    const el = document.querySelector(".sound-section") as HTMLElement;
     window.scrollTo({
       top: el.getBoundingClientRect().top,
       left: 0,
