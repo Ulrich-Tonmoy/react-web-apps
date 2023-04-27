@@ -12,7 +12,7 @@ const Cube = ({ position, texture }: any) => {
   }));
   const [addCube, removeCube] = useStore((state: any) => [state.addCube, state.removeCube]);
 
-  const activeTexture = textures[texture + "Texture"];
+  const activeTexture = (textures as any)[texture + "Texture"];
 
   return (
     <mesh

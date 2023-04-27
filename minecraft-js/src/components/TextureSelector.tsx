@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { useStore } from "../hooks/useStore";
@@ -25,7 +26,7 @@ export const TextureSelector = (): JSX.Element => {
       wood,
       log,
     };
-    const pressedTexture = Object.entries(textures).find(([k, v]) => v);
+    const pressedTexture = Object.entries(textures).find(([_k, v]) => v);
     if (pressedTexture) {
       setTexture(pressedTexture[0]);
     }

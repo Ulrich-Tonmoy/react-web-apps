@@ -21,7 +21,7 @@ const Ground = () => {
       }}
       ref={ref}
     >
-      <planeGeometry attached="geometry" args={[100, 100]} />
+      <planeGeometry attach="geometry" args={[100, 100]} />
       <meshStandardMaterial attach="material" map={groundTexture} />
     </mesh>
   );
