@@ -2,6 +2,15 @@ import { Routes, Route, Link, Outlet } from "react-router-dom";
 import { Suspense } from "react";
 import { lazyLoader } from "./utils/lazyLoader";
 
+// Default Export Component
+// const Home = lazy(() => import("../components/Home"))
+// Named Export Component
+/* const About = lazy(() =>
+  import("../components/About").then((module) => {
+    return { default: module.About };
+  })
+); */
+
 const Home = lazyLoader("../components/Home");
 const Store = lazyLoader("../components/Store");
 const About = lazyLoader("../components/About", "About");
