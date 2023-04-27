@@ -9,15 +9,4 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 
-export {
-  Navbar,
-  Billing,
-  CardDeal,
-  Business,
-  Clients,
-  CTA,
-  Stats,
-  Footer,
-  Testimonials,
-  Hero,
-};
+export { Navbar, Billing, CardDeal, Business, Clients, CTA, Stats, Footer, Testimonials, Hero };
