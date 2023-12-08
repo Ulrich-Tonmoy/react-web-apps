@@ -2,8 +2,6 @@
 
 Basic minecraft build with react and threejs
 
-## [Live](https://minecraft-js.netlify.app/)
-
 ## Screenshots
 
 <p align="center">

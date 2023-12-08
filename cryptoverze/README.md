@@ -2,8 +2,6 @@
 
 A Cryptocurrency information and news website build with ReactJS, ant-design, reduxjs/toolkit, chart.js and RestAPI from Rapid API. Here user can find the lists of top 100 cryptocurrencies their current price, market cap and daily changes, their specific full details and also search for cryptocurrencies news.
 
-## [Cryptoverze Live](https://cryptoverze.netlify.app/)
-
 ## ScreenShots
 
 <img alt="demo1" src="https://github.com/Ulrich-Tonmoy/website-reactjs/blob/main/cryptoverze/docs/demo1.png" />

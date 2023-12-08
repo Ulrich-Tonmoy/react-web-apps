@@ -2,8 +2,6 @@
 
 A 3d Apple store iphone landing page
 
-## [Live](https://3d-iphone-store-landing-page.netlify.app/)
-
 ## Screenshots
 
 <p align="center">

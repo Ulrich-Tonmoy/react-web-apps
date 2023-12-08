@@ -1,7 +1,5 @@
 # 3D T-Shirt Customizer
 
-## [Live](https://3d-t-shirt-customizer.netlify.app/)
-
 ## Screenshots
 
 <p align="center">
