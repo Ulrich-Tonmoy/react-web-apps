@@ -2,8 +2,6 @@
 
 website demo, templates or clone built with React JS
 
-## [Cryptoverze Live](https://cryptoverze.netlify.app/)
-
 <p align="center">
   <a href="./minecraft-js"title="minecraft">
     <img alt="minecraft" src="./minecraft-js/docs/1.png" width="330px"/>
