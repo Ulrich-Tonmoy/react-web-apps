@@ -9,7 +9,7 @@ function App() {
     <PathFindingProvider>
       <TileProvider>
         <SpeedProvider>
-          <div className="flex flex-col w-screen h-screen">
+          <div className="flex flex-col w-full h-full">
             <Nav isVisualizationRunning={isVisualizationRunning} />
             <Grid isVisualizationRunning={isVisualizationRunning} />
           </div>

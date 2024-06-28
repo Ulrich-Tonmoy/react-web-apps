@@ -8,6 +8,7 @@ import {
   PATH_FINDING_ALGORITHMS,
   SLEEP_TIME,
   SPEEDS,
+  SpeedType,
   animatePath,
   resetGrid,
   runMazeAlgorithm,
@@ -33,7 +34,7 @@ export const Nav = ({
     setAlgorithm,
   } = usePathFinding();
   const { startTile, endTile } = useTile();
-  const { speed } = useSpeed();
+  const { speed, setSpeed } = useSpeed();
 
   const handleGenerateMaze = (maze: MazeType) => {
     if (maze === "NONE") {
@@ -100,6 +101,12 @@ export const Nav = ({
             value={algorithm}
             options={PATH_FINDING_ALGORITHMS}
             onChange={(e) => setAlgorithm(e.target.value as AlgorithmType)}
+          />
+          <Select
+            label="Speed"
+            value={speed}
+            options={SPEEDS}
+            onChange={(e) => setSpeed(parseInt(e.target.value) as SpeedType)}
           />
           <PlayButton
             isDisabled={isDisabled}
