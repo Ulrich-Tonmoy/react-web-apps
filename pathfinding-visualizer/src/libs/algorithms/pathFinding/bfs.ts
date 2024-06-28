@@ -1,7 +1,7 @@
 import { GridType, TileType, getUntraversedNeighbors, isEqual, isInQueue } from "@/libs";
 
 export const bfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
-  const traversedTile: TileType[] = [];
+  const traversedTiles: TileType[] = [];
   const base = grid[startTile.row][startTile.col];
   base.distance = 0;
   base.isTraversed = true;
@@ -12,7 +12,7 @@ export const bfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
     if (tile.isWall) continue;
     if (tile.distance === Infinity) break;
     tile.isTraversed = true;
-    traversedTile.push(tile);
+    traversedTiles.push(tile);
     if (isEqual(tile, endTile)) break;
 
     const neighbors = getUntraversedNeighbors(grid, tile);
@@ -33,5 +33,5 @@ export const bfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
     path.unshift(tile);
     tile = tile.parent!;
   }
-  return { traversedTile, path };
+  return { traversedTiles, path };
 };
