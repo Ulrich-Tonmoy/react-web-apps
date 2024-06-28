@@ -22,3 +22,17 @@ export const getRandInt = (min: number, max: number) => {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min);
 };
+
+export function isInQueue(tile: TileType, queue: TileType[]) {
+  for (let i = 0; i < queue.length; i++) {
+    if (isEqual(tile, queue[i])) return true;
+  }
+  return false;
+}
+
+export const checkStack = (tile: TileType, stack: TileType[]) => {
+  for (let i = 0; i < stack.length; i++) {
+    if (isEqual(tile, stack[i])) return true;
+  }
+  return false;
+};
