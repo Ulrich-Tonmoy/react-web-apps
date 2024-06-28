@@ -63,6 +63,9 @@ export const Nav = ({
     if (isGraphVisualized) {
       setIsGraphVisualized(false);
       resetGrid({ grid: grid.slice(), startTile, endTile });
+      setSpeed(0.5);
+      setAlgorithm("BFS");
+      setMaze("NONE");
       return;
     }
 
