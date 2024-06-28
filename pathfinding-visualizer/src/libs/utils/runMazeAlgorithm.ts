@@ -1,3 +1,4 @@
+import { binaryTree } from "../algorithms";
 import { GridType, MazeType, SpeedType, TileType } from "../types";
 
 export const runMazeAlgorithm = async ({
