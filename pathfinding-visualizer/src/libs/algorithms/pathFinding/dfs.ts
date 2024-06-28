@@ -5,10 +5,10 @@ export const dfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
   const base = grid[startTile.row][startTile.col];
   base.distance = 0;
   base.isTraversed = true;
-  const unTraversed = [base];
+  const untraversed = [base];
 
-  while (unTraversed.length) {
-    const tile = unTraversed.pop()!;
+  while (untraversed.length) {
+    const tile = untraversed.pop()!;
     if (tile.isWall) continue;
     if (tile.distance === Infinity) break;
     tile.isTraversed = true;
@@ -17,11 +17,11 @@ export const dfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
 
     const neighbors = getUntraversedNeighbors(grid, tile);
     for (let i = 0; i < neighbors.length; i++) {
-      if (!checkStack(neighbors[i], unTraversed)) {
+      if (!checkStack(neighbors[i], untraversed)) {
         const neighbor = neighbors[i];
         neighbor.distance = tile.distance + 1;
         neighbor.parent = tile;
-        unTraversed.push(neighbor);
+        untraversed.push(neighbor);
       }
     }
   }
