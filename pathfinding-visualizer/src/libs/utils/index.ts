@@ -4,3 +4,4 @@ export * from "./restGrid";
 export * from "./runMazeAlgorithm";
 export * from "./createWall";
 export * from "./destroyWall";
+export * from "./constructBorder";
