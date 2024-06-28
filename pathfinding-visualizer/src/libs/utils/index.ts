@@ -6,3 +6,5 @@ export * from "./createWall";
 export * from "./destroyWall";
 export * from "./constructBorder";
 export * from "./runPathFindingAlgorithm";
+export * from "./getUntraversedNeighbors";
+export * from "./isInQueue";

@@ -7,6 +7,7 @@ import {
   PATH_FINDING_ALGORITHMS,
   resetGrid,
   runMazeAlgorithm,
+  runPathFindingAlgorithm,
 } from "@/libs";
 import { useState } from "react";
 import { PlayButton } from "./PlayButton";
@@ -55,6 +56,13 @@ export const Nav = () => {
       resetGrid({ grid: grid.slice(), startTile, endTile });
       return;
     }
+
+    const { tranversedTile, path } = runPathFindingAlgorithm({
+      algorithm,
+      grid,
+      startTile,
+      endTile,
+    });
   };
 
   return (

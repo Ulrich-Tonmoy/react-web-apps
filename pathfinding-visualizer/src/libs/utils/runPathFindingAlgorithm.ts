@@ -1,4 +1,5 @@
 import { AlgorithmType, GridType, TileType } from "../types";
+import { bfs } from "../algorithms";
 
 export const runPathFindingAlgorithm = ({
   algorithm,
@@ -11,4 +12,10 @@ export const runPathFindingAlgorithm = ({
   startTile: TileType;
   endTile: TileType;
 }) => {
+  switch (algorithm) {
+    case "BFS":
+      return bfs(grid, startTile, endTile);
+    default:
+      return bfs(grid, startTile, endTile);
+  }
 };
