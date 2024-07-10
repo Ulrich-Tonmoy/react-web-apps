@@ -1,5 +1,12 @@
+import { SortingAlgorithmProvider } from "@/context";
+import { Home } from "@/components";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <SortingAlgorithmProvider>
+      <Home />
+    </SortingAlgorithmProvider>
+  );
 }
 
 export default App;
