@@ -1,9 +1,29 @@
-import { useSortingAlgorithmContext } from "@/libs";
+import {
+  algorithmOptions,
+  SortingAlgorithmType,
+  useSortingAlgorithmContext,
+} from "@/libs";
 import { Slider } from "./Slider";
+import { Select } from "./Select";
+import { RxReset } from "react-icons/rx";
+import { FaPlayCircle } from "react-icons/fa";
 
 export const Home = () => {
-  const { arrayToSort, isSorting, animationSpeed, setAnimationSpeed } =
-    useSortingAlgorithmContext();
+  const {
+    arrayToSort,
+    isSorting,
+    animationSpeed,
+    setAnimationSpeed,
+    selectedAlgorithm,
+    setSelectedAlgorithm,
+    requiresReset,
+  } = useSortingAlgorithmContext();
+
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedAlgorithm(e.target.value as SortingAlgorithmType);
+  };
+
+  const handlePlay = () => {};
 
   return (
     <div className="absolute top-0 h-screen w-screen z-[-2] bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#150229_1px)] bg-[size:40px_40px]">
@@ -22,6 +42,19 @@ export const Home = () => {
                 value={animationSpeed}
                 handleChange={(e) => setAnimationSpeed(Number(e.target.value))}
               />
+              <Select
+                options={algorithmOptions}
+                defaultValue={selectedAlgorithm}
+                onChange={handleSelectChange}
+                isDisabled={isSorting}
+              />
+              <button className="flex items-center justify-center" onClick={handlePlay}>
+                {requiresReset ? (
+                  <RxReset className="w-8 h-8 text-gray-400" />
+                ) : (
+                  <FaPlayCircle className="w-8 h-8 text-system-green60" />
+                )}
+              </button>
             </div>
           </div>
           <div className="relative h-[calc(100vh-66px)] w-full">
