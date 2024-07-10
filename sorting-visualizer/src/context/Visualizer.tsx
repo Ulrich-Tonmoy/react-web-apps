@@ -62,7 +62,46 @@ export const SortingAlgorithmProvider = ({ children }: { children: ReactNode }) 
     setIsSorting(false);
   };
 
-  const runAnimation = () => {};
+  const runAnimation = (animations: AnimationArrayType) => {
+    setIsSorting(true);
+
+    const inverseSpeed = (1 / animationSpeed) * 200;
+    const arrLines = document.getElementsByClassName(
+      "array-line",
+    ) as HTMLCollectionOf<HTMLElement>;
+
+    const updateClassList = (
+      indexes: number[],
+      addClassName: string,
+      removeClassName: string,
+    ) => {
+      indexes.forEach((index) => {
+        arrLines[index].classList.add(addClassName);
+        arrLines[index].classList.remove(removeClassName);
+      });
+    };
+
+    const updateHeightValue = (lineIndex: number, newHeight: number | undefined) => {
+      arrLines[lineIndex].style.height = `${newHeight}px`;
+    };
+
+    animations.forEach((animation, index) => {
+      setTimeout(() => {
+        const [value, isSwap] = animation;
+
+        if (!isSwap) {
+          updateClassList(value, "change-line-color", "default-line-color");
+
+          setTimeout(() => {
+            updateClassList(value, "default-line-color", "change-line-color");
+          }, inverseSpeed);
+        } else {
+          const [lineIndex, newHeight] = value;
+          updateHeightValue(lineIndex, newHeight);
+        }
+      }, index * inverseSpeed);
+    });
+  };
 
   const value = {
     arrayToSort,
