@@ -1,8 +1,8 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import {
+  ANIMATION_SPEED,
   AnimationArrayType,
   generateRandomNumberFromInterval,
-  MAX_ANIMATION_SPEED,
   SortingAlgorithmType,
 } from "@/libs";
 
@@ -29,7 +29,7 @@ export const SortingAlgorithmProvider = ({ children }: { children: ReactNode }) 
   const [selectedAlgorithm, setSelectedAlgorithm] =
     useState<SortingAlgorithmType>("bubble");
   const [isSorting, setIsSorting] = useState<boolean>(false);
-  const [animationSpeed, setAnimationSpeed] = useState<number>(MAX_ANIMATION_SPEED);
+  const [animationSpeed, setAnimationSpeed] = useState<number>(ANIMATION_SPEED);
   const [isAnimationComplete, setIsAnimationComplete] = useState<boolean>(false);
   const requiresReset = isAnimationComplete || isSorting;
 
