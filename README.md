@@ -6,6 +6,9 @@ website demo, templates or clone built with React JS
   <a href="./pathfinding-visualizer"title="Path Finding Visualizer">
     <img alt="Path Finding Visualizer" src="./pathfinding-visualizer/public/pathfinding-visualizer.gif" width="330px"/>
   </a>
+  <a href="./sorting-visualizer"title="Sorting Visualizer">
+    <img alt="Sorting Visualizer" src="./sorting-visualizer/public/sorting-visualizer.png" width="330px"/>
+  </a>
   <a href="./minecraft-js"title="minecraft">
     <img alt="minecraft" src="./minecraft-js/docs/1.png" width="330px"/>
   </a>
