@@ -34,7 +34,8 @@ body {
 }
 
 .change-line-color {
-  background: theme("colors.system.green60");
+  /* background: theme("colors.system.green60"); */
+  background: red;
 }
 
 @keyframes pulse {

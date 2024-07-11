@@ -1,5 +1,6 @@
 import {
   algorithmOptions,
+  generateAnimationArray,
   SortingAlgorithmType,
   useSortingAlgorithmContext,
 } from "@/libs";
@@ -18,6 +19,7 @@ export const Home = () => {
     setSelectedAlgorithm,
     requiresReset,
     resetArrayAndAnimation,
+    runAnimation,
   } = useSortingAlgorithmContext();
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -29,6 +31,8 @@ export const Home = () => {
       resetArrayAndAnimation();
       return;
     }
+
+    generateAnimationArray(selectedAlgorithm, isSorting, arrayToSort, runAnimation);
   };
 
   return (

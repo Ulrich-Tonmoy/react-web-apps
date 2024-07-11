@@ -11,6 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@/components": resolve(__dirname, "src/components"),
+      "@/algorithms": resolve(__dirname, "src/algorithms"),
       "@/context": resolve(__dirname, "src/context"),
       "@/libs": resolve(__dirname, "src/libs"),
     },
