@@ -115,6 +115,23 @@ export const SortingAlgorithmProvider = ({ children }: { children: ReactNode }) 
         }
       }, index * inverseSpeed);
     });
+
+    const finalTimeout = animations.length * inverseSpeed;
+    setTimeout(() => {
+      Array.from(arrLines).forEach((line) => {
+        line.classList.add("pulse-animation", "change-line-color");
+        line.classList.remove("default-line-color");
+      });
+
+      setTimeout(() => {
+        Array.from(arrLines).forEach((line) => {
+          line.classList.remove("pulse-animation", "change-line-color");
+          line.classList.add("default-line-color");
+        });
+        setIsSorting(false);
+        setIsAnimationComplete(true);
+      }, 1000);
+    }, finalTimeout * 1.01);
   };
 
   const value = {
