@@ -67,7 +67,7 @@ export const Home = () => {
                 )}
               </button>
             </div>
-            <div className="hidden sm:flex absolute top-[120%] left-0 w-full">
+            <div className="hidden sm:flex absolute top-[120%] left-0 w-full z-50">
               <div className="flex w-full gap-6 p-4 text-gray-400 border rounded border-system-purple20 bg-system-purple80 bg-opacity-10">
                 <div className="flex flex-col items-start justify-start w-3/4">
                   <h3 className="text-lg">
