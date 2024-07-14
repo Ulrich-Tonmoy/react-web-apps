@@ -6,6 +6,9 @@ website demo, templates or clone built with React JS
   <a href="./pathfinding-visualizer"title="Path Finding Visualizer">
     <img alt="Path Finding Visualizer" src="./pathfinding-visualizer/public/pathfinding-visualizer.gif" width="330px"/>
   </a>
+  <a href="./conways-game-of-life"title="Conway's Game of Life">
+    <img alt="Conway's Game of Life" src="./conways-game-of-life/public/game-of-life.gif" width="330px"/>
+  </a>
   <a href="./sorting-visualizer"title="Sorting Visualizer">
     <img alt="Sorting Visualizer" src="./sorting-visualizer/public/sorting-visualizer.png" width="330px"/>
   </a>
