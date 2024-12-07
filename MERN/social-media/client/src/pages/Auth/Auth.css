@@ -1,0 +1,104 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4rem;
+  position: relative;
+}
+
+.auth > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-left {
+  gap: 2rem;
+}
+
+.auth-left > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.web-name > h1 {
+  font-size: 3rem;
+
+  /* Create the gradient. */
+  background-image: var(--buttonBg);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.web-name > h6 {
+  font-size: 0.85rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 28.25rem;
+  min-height: 25.75rem;
+  box-shadow: 0px 0px 10px 4px rgba(252, 166, 31, 1) inset;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(252, 166, 31, 1) inset;
+  -moz-box-shadow: 0px 0px 10px 4px rgba(252, 166, 31, 1) inset;
+}
+
+.auth-form > div {
+  display: flex;
+  gap: 1rem;
+  height: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-button {
+  width: 6rem;
+  height: 2rem;
+  align-self: flex-end;
+}
+
+.auth-button:disabled {
+  background: silver;
+  pointer-events: none;
+}
+
+.auth-link {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .auth {
+    flex-direction: column;
+    height: auto;
+  }
+  .auth-form {
+    min-width: 75vw;
+    min-height: auto;
+    row-gap: 4.5rem;
+  }
+  .auth-form > div {
+    flex-direction: column;
+  }
+}
