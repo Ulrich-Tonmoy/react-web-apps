@@ -35,14 +35,11 @@
 </p>
 
 <p align="center">
-  <h1 align="center">MERN</h1> 
-  <a href="./MERN/social-media" title="social-media">
-      <img alt="social-media" src="./MERN/social-media/docs/1.png" width="330px"/>
+  <h1 align="center">MERN</h1>
+    <a href="./MERN/social-blog" title="social-blog">
+      <img alt="social-blog" src="./MERN/social-blog/docs/home.png" width="330px"/>
     </a>
     <a href="./MERN/file-share" title="file-share">
       <img alt="file-share" src="./MERN/file-share/docs/1.png" width="330px"/>
-    </a>
-    <a href="./MERN/social-blog" title="social-blog">
-      <img alt="social-blog" src="./MERN/social-blog/docs/home.png" width="330px"/>
     </a>
 </p>
