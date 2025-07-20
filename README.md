@@ -17,6 +17,9 @@
   <a href="./React/3d-t-shirt-customizer"title="3d T-Shirt Customizer">
     <img alt="3d T-Shirt Customizer" src="./React/3d-t-shirt-customizer/docs/2.png" width="330px"/>
   </a>
+  <a href="./React/mojito"title="Mojito Landing Page">
+    <img alt="Mojito Landing Page" src="./React/mojito/docs/1.png" width="330px"/>
+  </a>
   <a href="./React/zentry"title="Zentry Landing Page">
     <img alt="zentry Landing Page" src="./React/zentry/public/zentry.png" width="330px"/>
   </a>
